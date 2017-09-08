@@ -19,12 +19,11 @@
   <!-- https://github.com/phonegap/phonegap-start/blob/master/www/config.xml -->
   
   <!-- preferences -->
-  
+ 
 
 	<!-- use cli-7.0.1 and the NEW builder -->
   <preference name='phonegap-version' value='cli-7.0.1' /> 
-	<!-- issue with removing status bar on new version? -->
-
+  
 
   <!-- use cli-7.0.1 and the old builder 
   <preference name='phonegap-version' value='cli-7.0.1' />
