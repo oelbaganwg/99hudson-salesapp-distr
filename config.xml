@@ -17,8 +17,23 @@
 	<content src="index.html"/>
   
   <!-- https://github.com/phonegap/phonegap-start/blob/master/www/config.xml -->
-  <!-- preference -->
-  <!-- <preference name='phonegap-version' value='cli-7.0.1' /> -->
+  
+  <!-- preferences -->
+  
+
+	<!-- use cli-7.0.1 and the NEW builder
+  <preference name='phonegap-version' value='cli-7.0.1' /> -->
+	<!-- issue with removing status bar on new version -->
+
+  <!-- use cli-7.0.1 and the old builder -->
+  <preference name='phonegap-version' value='cli-7.0.1' />
+  <preference name='pgb-builder-version' value='1' /> 
+
+
+	<!-- use the new builder with an older PhoneGap 
+  <preference name='phonegap-version' value='cli-6.5.0' />
+	<preference name='pgb-builder-version' value='2' /> -->
+
   <preference name="permissions" value="none"/>
   <preference name="orientation" value="default"/>
   <preference name="target-device" value="universal"/>
@@ -28,8 +43,8 @@
   <preference name="prerendered-icon" value="true"/>
   <preference name="stay-in-webview" value="false"/>
   <preference name="ios-statusbarstyle" value="black-opaque"/>
-  <preference name="StatusBarBackgroundColor" value="#000000" />
-  <preference name="StatusBarOverlaysWebView" value="false" />
+  <!-- <preference name="StatusBarBackgroundColor" value="#000000" /> -->
+  <preference name="StatusBarOverlaysWebView" value="true" />
   <preference name="detect-data-types" value="true"/>
   <preference name="exit-on-suspend" value="false"/>
   <preference name="show-splash-screen-spinner" value="false"/>
@@ -41,7 +56,10 @@
   <!-- plugins -->
 	<plugin name="cordova-plugin-statusbar" source="npm" />
   <plugin name="cordova-plugin-whitelist" source="npm" />
+  <plugin name="cordova-plugin-statusbar-hide-on-startup" source="npm" />
 
+
+	<!-- ICONS -->
 		<!-- http://docs.phonegap.com/phonegap-build/configuring/icons-and-splash/ -->
 	  <!-- default android and IOS splash -->
 	  <splash src="splash.png" />
@@ -100,7 +118,8 @@
 
   	<gap:config-file platform="ios" parent="UIViewControllerBasedStatusBarAppearance" overwrite="true"><false/>
   	</gap:config-file>
-  	<gap:config-file platform="ios" parent="UIStatusBarHidden" overwrite="true"> <true/> </gap:config-file>
+  	<gap:config-file platform="ios" parent="UIStatusBarHidden" overwrite="true"> <true/>
+  	</gap:config-file>
   	<feature name="StatusBar"><param name="ios-package" value="CDVStatusBar" onload="true" /></feature>
 		  
 		
