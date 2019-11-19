@@ -3,7 +3,7 @@
     xmlns:gap   = "http://phonegap.com/ns/1.0"
     id          = "com.nwg.nineyninehudsonsalesapp"
     versionCode = "10"
-    version     = "3.7.1" >
+    version     = "3.8.1" >
 
   <name>99 Hudson Sales App</name>
 
@@ -12,7 +12,7 @@
   </description>
 
   <author href="https://newworldgroup.com" email="oelbaga@newworldgroup.com">
-      New World Group Inc
+      New World Group, Inc.
   </author>
 	<content src="index.html"/>
   
@@ -54,7 +54,7 @@
   <preference name="android-installLocation" value="auto"/>
     
   <!-- plugins -->
-	<plugin name="cordova-plugin-statusbar" source="npm" />
+  <plugin name="cordova-plugin-statusbar" source="npm" />
   <plugin name="cordova-plugin-whitelist" source="npm" />
   <plugin name="cordova-plugin-statusbar-hide-on-startup" source="npm" />
 
@@ -72,7 +72,6 @@
 		<icon src="icons/android/96x96.png" platform="android" qualifier="xhdpi" />
 		<icon src="icons/android/144x144.png" platform="android" qualifier="xxhdpi" />
 		<icon src="icons/android/192x192.png" platform="android" qualifier="fr-xxhdpi" />
-		
 		<!-- ios icons -->
 
 		<!-- iPAD -->
